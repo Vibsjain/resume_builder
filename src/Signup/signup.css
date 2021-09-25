@@ -1,0 +1,151 @@
+.signup_outer_div{
+    background-color: #adb7df;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_heading{
+    margin-bottom: 5px;
+}
+
+.signup_box{
+    background-color: #001899;
+    margin: auto;
+    height: 80vh;
+    width: 70vw;
+    border-radius: 20px;
+    display: flex;
+}
+
+.vector_image{
+    width: 39vw;
+    border-radius: 20px 0px 0px 20px;
+    margin: 2px;
+}
+
+.signup_details{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+.signup_change{
+    margin-bottom: 5vh;
+}
+
+.login_link{
+    color: #adb7df;
+    cursor: pointer;
+}
+
+.login_link:hover{
+    text-decoration: underline;
+}
+
+.google_button{
+    display: flex;
+    background-color: white;
+    border: none;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    width: 12vw;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.google_button:hover {background-color: rgb(247, 242, 242)}
+
+.google_button:active {
+  background-color: rgb(247, 242, 242);
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.google_image{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.linkedIn_image{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.login_buttons{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 10px 0 0; */
+}
+
+/* Input Box CSS */
+
+.email_box{
+    margin-left: -2vw;
+    margin-top: -10px;
+}
+
+.field_label{
+    margin-bottom: 8px;
+}
+
+.input_box i{
+    position: absolute;
+}
+
+.input_box{
+    width: 25vw;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.icon {
+    padding: 10px 0px;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+}
+
+.cred_input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+.essential{
+    color: red;
+}
+
+.or_text{
+    color: #adb7df;
+    font-size: 20px;
+}
+
+.register_button{
+    height: 5vh;
+    background-color: #C0C7E0;
+    border-radius: 10px;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 10vh;
+    font-weight: bold;
+}
+
+.register_button:hover {background-color: #aaafc2}
+
+.register_button:active {
+  background-color: #aaafc2;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
