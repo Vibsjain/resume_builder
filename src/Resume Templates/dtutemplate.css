@@ -1,0 +1,66 @@
+.outerDiv{
+    width: 50vw;
+    min-height: 100vh;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.personalDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherDetails{
+    margin: 0;
+    font-size: 15px;
+}
+
+.name{
+    margin: 0;
+    font-weight: bold;
+}
+
+.sectionHeading{
+    width: 100%;
+    border: 1.5px solid black;
+    background-color: rgb(179, 178, 178);
+    color: black;
+    font-weight: bold;
+    /* padding: 2px; */
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+table{
+    width: 100%;
+}
+
+table, td, th{
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+.experience{
+    width: 97%;
+    padding-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+.companyName, .date, .profile{
+    font-weight: bold;
+}
+
+.date{
+    position: relative;
+    right: 0px;
+}
+
+.techDetail{
+    width: 100%;
+    text-align: center;
+}

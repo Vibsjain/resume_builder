@@ -1,0 +1,10 @@
+.mainDiv{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #adb7df;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
