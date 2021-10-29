@@ -1,0 +1,8 @@
+.education_container{
+    /* width: 60vw; */
+    border: 1px solid rgb(230, 227, 227);
+    /* height: 67vh; */
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}

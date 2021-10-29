@@ -1,0 +1,14 @@
+.aggreLabel{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.flexAggre{
+    display: flex;
+    align-items: center;
+}
+
+.textAggre{
+    margin-left: 10px;
+    margin-top: -3px;
+}

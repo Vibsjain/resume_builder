@@ -7,7 +7,7 @@ function Dtutemplate() {
     // console.log(details[0].personal_detail);
 
     var eduDetail = details[0].education_detail;
-    var experience = details[0].experience;
+    // var experience = details[0].experience;
 
     return (
         <div className="outerDiv">
@@ -28,19 +28,19 @@ function Dtutemplate() {
                         <td>{eduDetail.college.degree} ({eduDetail.college.branch})</td>
                         <td>{eduDetail.college.start}-{eduDetail.college.end}</td>
                         <td>{eduDetail.college.name}</td>
-                        <td>{eduDetail.college.aggregate} {eduDetail.college.type == "CGPA" ? "CGPA" : "%"}</td>
+                        <td>{eduDetail.college.aggregate} {eduDetail.college.type === "CGPA" ? "CGPA" : "%"}</td>
                     </tr>
                     <tr>
                         <td>{eduDetail.twelth.board} (Class XII)</td>
                         <td>{eduDetail.twelth.year}</td>
                         <td>{eduDetail.twelth.name}</td>
-                        <td>{eduDetail.twelth.aggregate} {eduDetail.twelth.type == "CGPA" ? "CGPA" : "%"}</td>
+                        <td>{eduDetail.twelth.aggregate} {eduDetail.twelth.type === "CGPA" ? "CGPA" : "%"}</td>
                     </tr>
                     <tr>
                         <td>{eduDetail.tenth.board} (Class X)</td>
                         <td>{eduDetail.tenth.year}</td>
                         <td>{eduDetail.tenth.name}</td>
-                        <td>{eduDetail.tenth.aggregate} {eduDetail.tenth.type == "CGPA" ? "CGPA" : "%"}</td>
+                        <td>{eduDetail.tenth.aggregate} {eduDetail.tenth.type === "CGPA" ? "CGPA" : "%"}</td>
                     </tr>
                 </table>
             </div>
