@@ -1,0 +1,66 @@
+.container{
+    background-color: #001899;
+    margin: auto;
+    height: 80vh;
+    width: 70vw;
+    border-radius: 20px;
+    display: flex;
+}
+
+.logo{
+    color:aliceblue;
+    background-color: #b3b4bb
+    
+}
+.maincontainer{
+    background-color: #adb7df;
+}
+
+.register_button{
+    height: 6vh;
+    background-color: #C0C7E0;
+    border-radius: 10vh;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.register_button:hover {background-color: #aaafc2}
+
+.register_button:active {
+  background-color: #aaafc2;
+  box-shadow: 0 10% #666;
+  transform: translateY(4px);
+}
+.google_button{
+    height: 6vh;
+    background-color: #C0C7E0;
+    border-radius: 10vh;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    
+    font-weight: bold;
+}
+
+.google_button:hover {background-color: rgb(247, 242, 242)}
+
+.google_button:active {
+  background-color: rgb(247, 242, 242);
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.google_image{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.linkedIn_image{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
