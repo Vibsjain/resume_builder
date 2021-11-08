@@ -21,7 +21,7 @@ function Login() {
 
     return (
      <div className="maincontainer">
-    <div className="container">
+    <div className="container outer-div">
             <div class="col-lg-6 d-sm-none d-md-none d-lg-flex">
             <img className="img-fluid d-none d-sm-block" src={vectorImage} alt="Sign Up Here!" />
             </div>
@@ -29,7 +29,7 @@ function Login() {
             <p className="h1 text-center mt-5 text-white">Build Your Resume</p>
             <p className=" text-center text-white">Are You A Existing User? <small className="text-center text-light">Login</small></p>
            <div>
-           <div className="d-lg-block text-center p-5 d-sm-none d-xs-none  d-md-block">
+           <div className="d-lg-block text-center p-5 d-sm-block  d-md-flex">
                         <div className="btn btn-md text-center google_button p-4 m-4 text-white">
                             <img className="google_image" src={googleLogo} alt=" " />
                             Sign Up With Google

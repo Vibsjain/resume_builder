@@ -1,4 +1,4 @@
-.container{
+.outer-div{
     background-color: #001899;
     margin: auto;
     height: 80vh;
@@ -14,7 +14,11 @@
 }
 .maincontainer{
     background-color: #adb7df;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
 }
+
 
 .register_button{
     height: 6vh;
@@ -38,7 +42,7 @@
     height: 6vh;
     background-color: #C0C7E0;
     border-radius: 10vh;
-    width: 20vw;
+    width: auto;
     border: none;
     cursor: pointer;
     
