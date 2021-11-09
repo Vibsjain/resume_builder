@@ -5,22 +5,14 @@ import googleLogo from "../Images/google.png"
 import linkedinLogo from "../Images/linkedin.png"
 
 function Login() {
-    const email = React.useRef(null);
-    const password = React.useRef(null);
+  const [state, setState] = useState({
     
-  
-    const handleSubmit = e => {
-      e.preventDefault();
-  
-      const data = {
-        email: email.current.value,
-        password: password.current.value
-        
-      }
-    }
+    email: "",
+    password: ""
+  });
     return (
      <div className="maincontainer">
-    <div className="container">
+    <div className="container outer-div">
             <div class="col-lg-6 d-sm-none d-md-none d-lg-flex">
             <img className="img-fluid d-none d-sm-block" src={vectorImage} alt="Sign Up Here!" />
             </div>
@@ -46,13 +38,25 @@ function Login() {
   
     <label for="exampleInputEmail1" className="text-white">Email address<span className="text-danger">*</span></label>
     
-    <input type="email" class="form-control" id="exampleInputEmail1" ref={email} aria-describedby="emailHelp" placeholder="Enter email"/>
+    <input type="email" class="form-control" id="exampleInputEmail1" ref={email} aria-describedby="emailHelp" placeholder="Enter email" value={state.email}
+              onChange={(e) => {
+                const val = e.target.value;
+                setState((prevState) => {
+                  return { ...prevState, email: val };
+                });
+              }} />
    
     
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1" className="text-white">Password<span className="text-danger">*</span></label>
-    <input type="password" className="form-control" id="exampleInputPassword1" ref={password} placeholder="Password"/>
+    <input type="password" className="form-control" id="exampleInputPassword1" ref={password} placeholder="Password" value={state.password}
+              onChange={(e) => {
+                const val = e.target.value;
+                setState((prevState) => {
+                  return { ...prevState, password: val };
+                });
+              }}/>
   </div>
  
   <div className="text-center ">
