@@ -16,8 +16,8 @@ function Personal_detail() {
         <h3 style={{ fontWeight: "bold" }}>Personal Details</h3>
       </div>
       <form>
-        <div className="form-group container join_container">
-          <div className="col-xs-4">
+        <div className="form-group row">
+          <div className="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-4">
             <label>Full Name</label>
             <input
               type="text"
@@ -33,7 +33,7 @@ function Personal_detail() {
               }}
             />
           </div>
-          <div className="col-xs-6">
+          <div className="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-5">
             <label>Email Address</label>
             <input
               type="email"
@@ -48,7 +48,7 @@ function Personal_detail() {
               }}
             />
           </div>
-          <div className="col-xs-4">
+          <div className="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <label>Contact Number</label>
             <input
               type="text"
@@ -64,8 +64,8 @@ function Personal_detail() {
             />
           </div>
         </div>
-        <div className="form-group container join_container">
-          <div className="col-xs-6">
+        <div className="form-group row">
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <label>LinkedIn Profile</label>
             <input
               type="text"
@@ -80,7 +80,7 @@ function Personal_detail() {
               }}
             />
           </div>
-          <div className="col-xs-6">
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <label>GitHub Profile</label>
             <input
               type="text"

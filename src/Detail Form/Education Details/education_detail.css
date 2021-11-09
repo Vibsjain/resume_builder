@@ -1,8 +1,28 @@
 .education_container{
-    /* width: 60vw; */
+    width: 90vw;
     border: 1px solid rgb(230, 227, 227);
-    /* height: 67vh; */
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin-left: 20px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.hrStyle {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    width: 60%;
+}
+.hrStyle:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
