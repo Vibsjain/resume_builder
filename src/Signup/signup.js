@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import "./signup.css";
 import vectorImage from "../Images/online_resume.gif"
 import googleLogo from "../Images/google.png"
@@ -10,6 +10,7 @@ function Signup() {
     email: "",
     password: ""
   });
+
 
     return (
      <div className="maincontainer">
@@ -39,7 +40,7 @@ function Signup() {
   
     <label for="exampleInputEmail1" className="text-white"   v>Email address<span className="text-danger">*</span></label>
     
-    <input type="email" class="form-control" id="exampleInputEmail1" ref={email} aria-describedby="emailHelp" placeholder="Enter email"  value={state.email}
+    <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter email"   value={state.email}
               onChange={(e) => {
                 const val = e.target.value;
                 setState((prevState) => {

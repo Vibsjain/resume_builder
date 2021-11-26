@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./login.css";
 import vectorImage from "../Images/online_resume.gif"
 import googleLogo from "../Images/google.png"
@@ -7,8 +7,8 @@ import linkedinLogo from "../Images/linkedin.png"
 function Login() {
   const [state, setState] = useState({
     
-    email: "",
-    password: ""
+   email: "",
+   password: ""
   });
     return (
      <div className="maincontainer">
@@ -18,7 +18,7 @@ function Login() {
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 m-auto col-xs-12">
             <p className="h1 text-center mt-5 text-white">Build Your Resume</p>
-            <p className=" text-center text-white">Are You A New User? <small className="text-center text-light">Login</small></p>
+            <p className=" text-center text-white">Are You A New User? <small className="text-center text-light">Signup</small></p>
            <div>
            <div className="d-lg-block text-center p-5 d-sm-none d-xs-none  d-md-block">
                         <div className="btn btn-md text-center google_button p-4 m-4 text-white">
@@ -38,7 +38,7 @@ function Login() {
   
     <label for="exampleInputEmail1" className="text-white">Email address<span className="text-danger">*</span></label>
     
-    <input type="email" class="form-control" id="exampleInputEmail1" ref={email} aria-describedby="emailHelp" placeholder="Enter email" value={state.email}
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value={state.email}
               onChange={(e) => {
                 const val = e.target.value;
                 setState((prevState) => {
@@ -50,7 +50,7 @@ function Login() {
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1" className="text-white">Password<span className="text-danger">*</span></label>
-    <input type="password" className="form-control" id="exampleInputPassword1" ref={password} placeholder="Password" value={state.password}
+    <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" value={state.password}
               onChange={(e) => {
                 const val = e.target.value;
                 setState((prevState) => {
